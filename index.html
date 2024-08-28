@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>system perhitungan dus</title>
+      <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+   </head>
+   <body>
+  <body>
+    <div class="container">
+        <h1>masukan input Bahan</h1>
+        <form id="bahanForm">
+           
+            <div class="input"> panjang
+               <input placeholder="PANJANG (cm)" 
+                     type="number" 
+                     id="panjang" 
+                     name="panjang" 
+                     required> 
+            </div> 
+            <div class="input">Lebar
+               <input placeholder="LEBAR  [cm]" 
+                     type="number" 
+                     id="lebar" 
+                     name="lebar" 
+                     required> 
+               </div>
+            <div class="input">harga laminasi
+               <input placeholder="Harga laminasi]" 
+                     type="number" 
+                     id="hargaLaminasi" 
+                     name="hargalaminasi" 
+                     step="any"> 
+               </div>
+            <div class="input">banyak nya barang
+               <input placeholder="quantity" 
+                     type="number" 
+                     id="qtyLaminasi" 
+                     name="qtyLaminasi" 
+                     required> 
+               </div>
+            <button type="submit">Hitung</button>
+        </form>
+        <div id="result">
+            <div id="canvasContainer">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div id="hasilPerhitungan">
+                <p id="totalBiaya"></p>
+            </div>
+        </div>
+    </div>
+      
+      
+      
+    
+      
+      
+   
+   
+   
+   
+   <script src="script.js"></script>
+   </body>
+</html>
